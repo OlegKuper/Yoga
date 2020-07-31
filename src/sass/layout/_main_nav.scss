@@ -1,0 +1,64 @@
+/* main-nav */
+.main-nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 775px;
+	margin: 0 auto;
+	width: 100%;
+	@include media("<tablet") {
+		display: block;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		width: 280px;
+		right: -280px;
+		background: $black;
+		z-index: 100;
+		transition: right .5s;
+		overflow-y: auto;
+		overflow-x: hidden;
+
+	}
+	@include media("<phone") {
+		width: 260px;
+		right: -260px;
+	}
+	&__list{
+		display: flex;
+		align-items: center;
+	}
+	&__item{
+		margin-right: 25px;
+		&:last-child{
+			margin-right: 0px;
+		}
+	}
+	&__link{
+		display: block;
+		position: relative;
+		font-size: 14px;
+		line-height: 100px;
+		font-weight: 600;
+		&:before{
+			content: '';
+			position: absolute;
+			bottom: 38px;
+			left: 50%;
+			transform: translate(-50%, 0);
+			height: 1px;
+			width: 0;
+			background: $royal;
+			opacity: 0;
+			transition: .3s ease-in-out;
+		}
+		&:hover{
+			color:$royal;
+			&:before{
+				opacity: 1;
+				width: 50%;
+			}
+		}
+	}
+}

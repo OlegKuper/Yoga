@@ -1,0 +1,30 @@
+.visual{
+  margin-top: 100px;
+  height: 600px;
+  position: relative;
+  z-index: 0;
+  padding: 200px 0 100px;
+  &:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(83,99,219,0.80);
+    z-index: -1;
+  }
+  &__form-holder{
+    padding: 40px 30px 35px;
+    background: $white;
+    max-width: 300px;
+    border-radius: 15px;
+  }
+  &__form-title{
+    display: block;
+    font-size: 25px;
+    line-height: 30px;
+    color:$royal;
+    font-weight: 600;
+  }
+}
