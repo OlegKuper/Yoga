@@ -189,15 +189,26 @@ table{border-collapse: collapse;}
 /*typography*/
 h1, .h1{
 	font-size: $font-size-h1;
-	line-height: 1.25;
-	font-family: "FreestyleScript-Regular";
+	line-height: 72px;
+	font-family: $font-family-base;
 	font-weight: 700;
-	color: $black;
-	text-align: center;
+	color: $white;
+	text-align: left;
+	text-transform: uppercase;
 	margin: 0;
 	@include media("<desktop"){}
-	@include media("<tablet"){}
-	@include media("<phone"){}
+	@include media("<tablet"){
+		text-align: center;
+		font-size: 40px;
+		line-height: 65px;
+	}
+	@include media("<phone"){
+		font-size: 30px;
+		line-height: 50px;
+	}
+	@include media('<370px') {
+		font-size: 28px;
+	}
 }
 h2, .h2{
 	font-size: $font-size-h2;
@@ -214,14 +225,27 @@ h2, .h2{
 h3, .h3{
 	font-size: $font-size-h3;
 	line-height: 1.25;
-	font-family: $font-family-base;
+	font-family: "FreestyleScript-Regular";
 	font-weight: 400;
 	color: $black;
 	text-align: center;
 	margin: 0 0 15px;
+	&__white{
+		color:$white;
+		text-align: left;
+		@include media('<tablet') {
+			text-align: center;
+		}
+	}
 	@include media("<desktop"){}
 	@include media("<tablet"){}
-	@include media("<phone"){}
+	@include media("<phone"){
+		font-size: 30px;
+
+	}
+	@include media('<370px') {
+		font-size: 28px;
+	}
 }
 h4, .h4{
 	font-size: $font-size-h4;

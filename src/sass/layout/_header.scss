@@ -13,17 +13,21 @@
 	z-index: 200;
 	height: 100px;
 	box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.15);
+	@include media('<tablet') {
+		height: 70px;
+	}
 	&__wrap{
 		display: flex;
 		align-items: center;
 		color:#000;
+		margin-left: -67px;
 	}
 }
 .logo{
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-80%, -50%);
 	width: 68px;
 	height: 68px;
 	background: url('#{$images}logo.png') no-repeat 50% 50%;
@@ -31,9 +35,15 @@
 	overflow: hidden;
 	text-indent: -9999px;
 	margin: 0 20px;
+	@include media('<tablet') {
+		width: 50px;
+		height: 50px;
+	}
 	@include media("<phone"){
-		width: 94px;
-		height: 30px;
+		width: 50px;
+		height: 50px;
+		left: 0;
+		transform: translate(0, -50%);
 	}
 	@include media("<500px"){
 		z-index: 200;
@@ -48,8 +58,9 @@
 	width: 48px;
 	height: 33px;
 	position: absolute;
-	top: 7px;
-	right: -10px;
+	top: 50%;
+	right: 0;
+	transform: translate(0, -50%);
 	transition: .5s ease-in-out;
 	cursor: pointer;
 	display: none;
@@ -57,15 +68,13 @@
 	@include media("<tablet"){
 		display: block;
 	}
-	@include media("<phone"){
-		top: 1px;
-	}
+
 	span{
 		display: block;
 		position: absolute;
 		height: 3px;
 		width: 100%;
-		background: #666;
+		background: rgba(83,99,219,0.7);
 		opacity: 1;
 		left: 5px;
 		border-radius: 10px;
@@ -80,7 +89,7 @@
 			right: 0;
 			bottom: 0;
 			width: 0;
-			background-color: #273444;
+			background-color: $royal;
 			transition: all .3s ease-out;
 		}
 		&:nth-child(1){
@@ -133,12 +142,6 @@
 					width: 0%;
 					left: 50%;
 				}
-			}
-		}
-		.wrapper{
-			margin: 0 280px 0 -280px;
-			@include media("<phone"){
-				margin: 0 260px 0 -260px;
 			}
 		}
 		.main-nav{

@@ -6,6 +6,7 @@ function initPage(){
 	$(function() {
 		jcf.replaceAll();
 	});
+	validateFields();
 }
 
 function ImgTobg() {
@@ -43,4 +44,55 @@ function pageScrollTop() {
 		}, 500);
 		e.preventDefault();
 	});
+}
+
+
+function validateFields(){
+	if( document.querySelector('.contact-form') ){
+		$(".contact-form").validate({
+			highlight: function(element) {
+				$(element).parent().addClass('form__box_error').removeClass('form__box_valid');
+			},
+			unhighlight: function(element) {
+				$(element).parent().removeClass('form__box_error').addClass('form__box_valid');
+			},
+			rules: {
+				request: {
+					required: false,
+					minlength: false
+				},
+				name: {
+					required: true,
+					minlength: 2
+				},
+				email: {
+					required: true,
+					email: true,
+					myEmail: true
+				}
+			},
+			messages: {
+				request: {
+					required: false,
+					minlength: false
+				},
+				name: {
+					required: false,
+					minlength: false
+				},
+				email: {
+					required: false,
+					email: false,
+					myEmail: false
+				}
+			}
+		});
+
+		$.validator.addMethod(
+			"myEmail",
+			function(value, element){
+				return value.match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
+			}
+		);
+	}
 }

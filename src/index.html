@@ -31,25 +31,33 @@
 						<div class="visual__form-block">
 							<div class="visual__form-holder">
 								<storng class="visual__form-title">Trial Class</storng>
-								<form action="#" class="form">
-									<div class="form__box">
-										<input type="text" placeholder="Enter your name" class="form__control" name="form_name" id="Name" minlength="2" required="">
-									</div>
-									<div class="form__box">
-										<input type="text" placeholder="Enter your phone" class="form__control" name="form_number" id="Phone" minlength="2" required="">
-									</div>
-									<div class="form__box">
-										<select class="jcf-hidden" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
-											<option class="hideme" value="v1">Chose your class</option>
-											<option value="v2">Chose your class</option>
-											<option value="v3">Chose your class</option>
-											<option value="v4">Chose your class</option>
-											<option value="v5">Chose your class</option>
-										</select>
+								<form action="#" class="form contact-form">
+									<div class="form__box-holder">
+										<div class="form__box">
+											<input type="text" placeholder="Enter your name" class="form__control" name="form_name" id="Name" minlength="3" required="">
+										</div>
+										<div class="form__box">
+											<input type="text" placeholder="Enter your phone" class="form__control" name="form_number" id="Phone" minlength="10" required="" oninput="this.value = this.value.replace(/[^0-9.+]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
+										</div>
+										<div class="form__box">
+											<select class="jcf-hidden" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+												<option class="hideme" value="v1">Chose your class</option>
+												<option value="v2">Chose your class</option>
+												<option value="v3">Chose your class</option>
+												<option value="v4">Chose your class</option>
+												<option value="v5">Chose your class</option>
+											</select>
+										</div>
 									</div>
 									<button class="form__btn btn">Try it</button>
 								</form>
 							</div>
+						</div>
+						<div class="visual__title-block">
+							<h1 class="h1">Just Balance<br>
+								your Mind & Body </h1>
+							<h3 class="h3 h3__white">Create the healthy living<br>
+								for yourself</h3>
 						</div>
 					</div>
 				</div>
@@ -63,6 +71,7 @@
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/jcf.js"></script>
 	<script src="js/jcf.select.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

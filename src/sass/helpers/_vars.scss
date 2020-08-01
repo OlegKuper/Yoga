@@ -20,9 +20,9 @@ $container-large-desktop: 1170px;
 $font-family-base: $OpenSans;
 $font-size-base: 16px;
 $line-height-base: 1.25;
-$font-size-h1: 30px;
+$font-size-h1: 48px;
 $font-size-h2: 24px;
-$font-size-h3: 25px;
+$font-size-h3: 40px;
 $font-size-h4: 24px;
 
 $paragraph-spacing: 0 0 15px;
@@ -33,12 +33,11 @@ $time-animation: 0.3s;
 // colors
 $white: #fff;
 $black: #000;
-$gray: #333;
+$gray: #888888;
 $emperor: #555555;
 $royal: #5363db;
 $boulder: #777777;
-$dusty: #999999;
-
+$concrete: #f2f2f2;
 
 
 
@@ -47,9 +46,9 @@ $body-bg: $white;
 
 $link-color: $black;
 
-$btn-color: $black;
-$btn-border-radius-base: 30px;
-$btn-font-size: 13px;
-$btn-line-height: 18px;
-$btn-font-weight: 400;
+$btn-color: $white;
+$btn-border-radius-base: 10px;
+$btn-font-size: 16px;
+$btn-line-height: 20px;
+$btn-font-weight: 700;
 $btn-min-width: 205px;

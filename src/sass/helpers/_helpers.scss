@@ -1,22 +1,30 @@
+
 .jcf-select{
+  display: flex;
+  align-items: center;
   min-width: auto;
   border: 0;
-  border-bottom: 1px solid #8d8b87;
   margin: 0;
-  height: 25px;
+  padding: 10px;
+  height: 50px;
+  background: $concrete;
+  border-radius: 10px;
 }
 .jcf-select-opener{
   background: transparent;
+}
+.jcf-select .jcf-select-opener{
+  right: 10px;
 }
 .jcf-select .jcf-select-opener:before {
   content: "";
   position: absolute;
   top: 50%;
-  right: 4px;
+  right: 0;
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 3px 3.5px 0 3.5px;
+  border-width: 5px 4.5px 0 4.5px;
   border-color: #464646 transparent transparent transparent;
   margin: 0px 0 0;
   transform: translate(0, -50%) ;
@@ -36,9 +44,23 @@
 }
 .jcf-select .jcf-select-text{
   margin: 2px 25px 0 0px;
-  color:#eee;
-  font-size: 16px;
-  line-height: 20px;
+  color:$gray;
+  font-size: 14px;
+  line-height: 18px;
+}
+.jcf-select-drop .jcf-hover, .jcf-list-box .jcf-selected{
+  background: $concrete;
+}
+.jcf-list .jcf-option{
+  padding: 10px 10px;
+  border-radius: 8px;
+}
+.jcf-list{
+  display: block;
+  position: relative;
+  font-size: 14px;
+  line-height: 18px;
+  border-radius: 8px;
 }
 
 .jcf-focus{
@@ -46,4 +68,16 @@
 }
 .jcf-select-drop .jcf-select-drop-content {
   border: 0;
+}
+
+
+.error{
+  display: block;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: $OpenSans;
+  position: absolute;
+  top: -13px;
+  right: 0;
+  color:#ce0505;
 }

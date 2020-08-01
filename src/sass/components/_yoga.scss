@@ -1,9 +1,15 @@
 .visual{
   margin-top: 100px;
-  height: 600px;
   position: relative;
   z-index: 0;
-  padding: 200px 0 100px;
+  padding: 100px 0 ;
+  @include media('<tablet') {
+    margin-top: 70px;
+    padding: 50px 0;
+  }
+  @include media('<phone') {
+    background-position: 62% 50%;
+  }
   &:before{
     content: '';
     position: absolute;
@@ -15,16 +21,99 @@
     z-index: -1;
   }
   &__form-holder{
-    padding: 40px 30px 35px;
+    padding: 35px 40px 35px 30px;
     background: $white;
     max-width: 300px;
     border-radius: 15px;
+    margin-left: auto;
+    @include media('<tablet') {
+      margin: 0 auto;
+      padding: 25px;
+    }
   }
   &__form-title{
     display: block;
-    font-size: 25px;
+    font-size: 22px;
     line-height: 30px;
     color:$royal;
     font-weight: 600;
+    margin-bottom: 25px;
   }
+  &__wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include media('<tablet') {
+      flex-direction: column-reverse;
+    }
+  }
+  &__form-block{
+    width: 50%;
+    margin-right: 90px;
+    @include media('<tablet') {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+  &__title-block{
+    width: 50%;
+    @include media('<tablet') {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
 }
+
+.form{
+  &__box-holder{
+    display: block;
+    margin-bottom: 30px;
+  }
+  &__box{
+    display: block;
+    position: relative;
+    margin-bottom: 18px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    &_error{
+      .form__control{
+        box-shadow: inset 0px 0px 1px 1px rgba(206,5,5,1);
+      }
+    }
+  }
+  &__control{
+    display: block;
+    position: relative;
+    width: 100%;
+    font-weight: 400;
+    color: $gray;
+    border: 0;
+    background: $concrete;
+    outline: none;
+    resize: none;
+    height: 50px;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 13px 10px 13px 10px;
+    border-radius: 10px;
+    &::placeholder{
+      color:$gray;
+    }
+  }
+  &__btn{
+    display: flex;
+    border-radius: 5px;
+    margin-left: auto;
+    box-shadow: 1px 1px 7px 1px rgba(0,0,0,0.15);
+    transition: .3s ease-out;
+    margin-top: 10px;
+    &:hover{
+      transform: translate(2px, -2px);
+      box-shadow: -2px 2px 7px 1px rgba(83,99,219,0.75);;
+    }
+  }
+
+}
+
