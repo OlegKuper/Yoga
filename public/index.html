@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+	<meta charset="utf-8">
+	<meta name = "format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<title>Title Name</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<meta property="og:title" content="Project" />
+	<meta property="og:description" content="Project" />
+	<meta property="og:image" content="images/ogp.jpg" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="https://Project.com" />
+	<link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-touch-icon-114x114.png">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="page">
+			<header class="header-page">
+				<div class="container">
+					<div class="header-page__wrap">
+						<h1 class="logo">
+							<a href="index.html" class="logo__link"></a>
+						</h1>
+						<div class="main-nav">
+							<ul class="main-nav__list">
+								<li class="main-nav__item">
+									<a href="#" class="main-nav__link">About us</a>
+								</li>
+								<li class="main-nav__item">
+									<a href="#" class="main-nav__link">Reservation</a>
+								</li>
+								<li class="main-nav__item">
+									<a href="#" class="main-nav__link">Gallery</a>
+								</li>
+							</ul>
+							<ul class="main-nav__list">
+								<li class="main-nav__item">
+									<a href="#" class="main-nav__link">Blog</a>
+								</li>
+								<li class="main-nav__item">
+									<a href="#" class="main-nav__link">Elements</a>
+								</li>
+								<li class="main-nav__item">
+									<a href="#" class="main-nav__link">Shop</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="visual img-to-bg">
+				<img src="images/visual-bg.jpg" alt="">
+				<div class="container">
+					<div class="visual__wrap">
+						<div class="visual__form-block">
+							<div class="visual__form-holder">
+								<storng class="visual__form-title">Trial Class</storng>
+								<form action="#" class="form contact-form">
+									<div class="form__box-holder">
+										<div class="form__box">
+											<input type="text" placeholder="Enter your name" class="form__control" name="form_name" id="Name" minlength="3" required="">
+										</div>
+										<div class="form__box">
+											<input type="text" placeholder="Enter your phone" class="form__control" name="form_number" id="Phone" minlength="10" required="" oninput="this.value = this.value.replace(/[^0-9.+]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
+										</div>
+										<div class="form__box">
+											<select class="jcf-hidden" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+												<option class="hideme" value="v1">Chose your class</option>
+												<option value="v2">Chose your class</option>
+												<option value="v3">Chose your class</option>
+												<option value="v4">Chose your class</option>
+												<option value="v5">Chose your class</option>
+											</select>
+										</div>
+									</div>
+									<button class="form__btn btn">Try it</button>
+								</form>
+							</div>
+						</div>
+						<div class="visual__title-block">
+							<h1 class="h1">Just Balance<br>
+								your Mind & Body </h1>
+							<h3 class="h3 h3__white">Create the healthy living<br>
+								for yourself</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<footer class="footer-page"></footer>
+	</div><!-- / wrapper -->
+	
+	<noscript>Detected missing Javascript support. Certain website features will not operate correctly with Javascript disabled.</noscript>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jcf.js"></script>
+	<script src="js/jcf.select.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
