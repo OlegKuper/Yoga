@@ -212,10 +212,10 @@ h1, .h1{
 }
 h2, .h2{
 	font-size: $font-size-h2;
-	line-height: 1.25;
+	line-height: 45px;
 	font-family: $font-family-base;
-	font-weight: 400;
-	color: $black;
+	font-weight: 700;
+	color: $royal;
 	text-align: center;
 	margin: 0 0 15px;
 	@include media("<desktop"){}
@@ -227,7 +227,7 @@ h3, .h3{
 	line-height: 1.25;
 	font-family: "FreestyleScript-Regular";
 	font-weight: 400;
-	color: $black;
+	color: $boulder;
 	text-align: center;
 	margin: 0 0 15px;
 	&__white{
