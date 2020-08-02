@@ -7,6 +7,7 @@ function initPage(){
 		jcf.replaceAll();
 	});
 	validateFields();
+	slider();
 }
 
 function ImgTobg() {
@@ -43,6 +44,12 @@ function pageScrollTop() {
 			scrollTop: offsetTop
 		}, 500);
 		e.preventDefault();
+	});
+}
+
+function slider() {
+	$('.slider').slick({
+		infinite: true,
 	});
 }
 
