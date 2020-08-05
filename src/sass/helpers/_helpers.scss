@@ -101,18 +101,28 @@
   z-index: 10;
   cursor: pointer;
   box-shadow: 3px 3px 5px 5px rgba(0,0,0,0.1);
+  @include media('<tablet') {
+    width: 40px;
+    height: 40px;
+  }
 }
 .slick-arrow.slick-prev {
   left: -25px;
   background: url('#{$images}slider-btn-prev.png') no-repeat;
+  background-size: 100% auto;
+
   @include media('<phone') {
     left: -10px;
+
   }
 }
 .slick-arrow.slick-next {
   right: -25px;
   background: url('#{$images}slider-btn-next.png') no-repeat;
+  background-size: 100% auto;
+
   @include media('<phone') {
     right: -10px;
+
   }
 }

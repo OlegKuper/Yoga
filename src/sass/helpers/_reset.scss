@@ -2,11 +2,11 @@
 	font-family: "FreestyleScript-Regular";
 	src: url("../../fonts/FREESCPT.eot"); /* IE9 Compat Modes */
 	src: url("../../fonts/FREESCPT.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-	url("../../fonts/FREESCPT.otf") format("opentype"), /* Open Type Font */
-	url("../../fonts/FREESCPT.svg") format("svg"), /* Legacy iOS */
-	url("../../fonts/FREESCPT.ttf") format("truetype"), /* Safari, Android, iOS */
-	url("../../fonts/FREESCPT.woff") format("woff"), /* Modern Browsers */
-	url("../../fonts/FREESCPT.woff2") format("woff2"); /* Modern Browsers */
+	url("../fonts/FREESCPT.otf") format("opentype"), /* Open Type Font */
+	url("../fonts/FREESCPT.svg") format("svg"), /* Legacy iOS */
+	url("../fonts/FREESCPT.ttf") format("truetype"), /* Safari, Android, iOS */
+	url("../fonts/FREESCPT.woff") format("woff"), /* Modern Browsers */
+	url("../fonts/FREESCPT.woff2") format("woff2"); /* Modern Browsers */
 	font-weight: normal;
 	font-style: normal;
 }
@@ -196,7 +196,6 @@ h1, .h1{
 	text-align: left;
 	text-transform: uppercase;
 	margin: 0 0 20px;
-	@include media("<desktop"){}
 	@include media("<tablet"){
 		text-align: center;
 		font-size: 40px;
@@ -219,14 +218,11 @@ h2, .h2{
 	text-align: center;
 	text-transform: uppercase;
 	margin: 0 0 15px;
-	@include media("<desktop"){}
-	@include media("<tablet"){}
-	@include media("<phone"){}
 }
 h3, .h3{
 	font-size: $font-size-h3;
 	line-height: 1.25;
-	font-family: "FreestyleScript-Regular";
+	font-family: $FreestyleScript;
 	font-weight: 400;
 	color: $boulder;
 	text-align: center;
@@ -238,8 +234,6 @@ h3, .h3{
 			text-align: center;
 		}
 	}
-	@include media("<desktop"){}
-	@include media("<tablet"){}
 	@include media("<phone"){
 		font-size: 30px;
 
@@ -256,15 +250,8 @@ h4, .h4{
 	color: $black;
 	text-align: left;
 	margin: 0 0 25px;
-	@include media("<desktop"){}
-	@include media("<tablet"){}
-	@include media("<phone"){}
+
 }
 p{margin: $paragraph-spacing;}
 /*end typography*/
 /* styles end */
-
-@include media("<desktop_lg"){}
-@include media("<desktop"){}
-@include media("<tablet"){}
-@include media("<phone"){}

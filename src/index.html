@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" prefix="og: http://ogp.me/ns#">
+<html lang="zxx">
 <head>
 	<meta charset="utf-8">
 	<meta name = "format-detection" content="telephone=no">
@@ -9,7 +9,7 @@
 	<title>Title Name</title>
 
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
 
 	<meta property="og:title" content="Project" />
 	<meta property="og:description" content="Project" />
@@ -26,13 +26,13 @@
 	<div class="wrapper">
 		<div class="page">
 			//= inc/_header.html
-			<section class="visual img-to-bg">
+			<section id="reserv" class="visual img-to-bg">
 				<img src="images/visual-bg.jpg" alt="">
 				<div class="container">
 					<div class="visual__wrap">
 						<div class="visual__form-block">
 							<div class="visual__form-holder">
-								<storng class="visual__form-title">Trial Class</storng>
+								<strong class="visual__form-title">Trial Class</strong>
 								<form action="#" class="form contact-form">
 									<div class="form__box-holder">
 										<div class="form__box">
@@ -56,15 +56,15 @@
 							</div>
 						</div>
 						<div class="visual__title-block">
-							<h1 class="h1">Just Balance<br>
-								your Mind & Body </h1>
+							<h2 class="h1">Just Balance<br>
+								your Mind & Body </h2>
 							<h3 class="h3 h3__white">Create the healthy living<br>
 								for yourself</h3>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="program">
+			<section id="blog" class="program">
 				<div class="container">
 					<h2 class="h2">Yoga FEATURE PROGRAM</h2>
 					<h3 class="h3">Our Classes</h3>
@@ -120,7 +120,7 @@
 					</ul>
 				</div>
 			</section>
-			<div class="gallery">
+			<div id="gallery" class="gallery">
 				<ul class="gallery__list">
 					<li class="gallery__item" >
 						<a href="images/gallery-img01.jpg" class="gallery__img-box img-to-bg" data-fancybox="gallery" data-caption="Caption #1">
@@ -173,7 +173,7 @@
 					</li>
 				</ul>
 			</div>
-			<section class="about">
+			<section id="about" class="about">
 				<div class="container">
 					<div class="about__wrap">
 						<div class="about__text">
@@ -199,7 +199,7 @@
 					</div>
 				</div>
 			</section>
-			<div class="elements img-to-bg">
+			<div id="elements" class="elements img-to-bg">
 				<img src="images/elements-bg.jpg" alt="">
 				<div class="container">
 					<ul class="elements__list">
@@ -267,6 +267,179 @@
 							<p class="elements__paragraph">Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
 						</li>
 					</ul>
+				</div>
+			</div>
+			<div id="shop" class="shop">
+				<div class="container">
+					<ul class="shop__list">
+						<li class="shop__item">
+							<div class="shop__content">
+								<div class="shop__price">
+									<strong class="shop__price-title">
+										<span class="shop__currency">$</span>
+										49
+										<span class="shop__month">/month</span>
+									</strong>
+								</div>
+								<div class="shop__text">
+									<p class="shop__paragraph">ENTRY DATE: MON – FRI</p>
+									<p class="shop__paragraph">ENTRY TIME: 8A.M – 8P.M</p>
+									<p class="shop__paragraph">NUTRITION ADVICER: NO</p>
+								</div>
+								<a href="#" id="shop-btn" class="shop__btn btn">Buy now</a>
+							</div>
+						</li>
+						<li class="shop__item">
+							<div class="shop__content">
+								<div class="shop__price">
+									<strong class="shop__price-title">
+										<span class="shop__currency">$</span>
+										69
+										<span class="shop__month">/month</span>
+									</strong>
+								</div>
+								<div class="shop__text">
+									<p class="shop__paragraph">ENTRY DATE: MON – FRI</p>
+									<p class="shop__paragraph">ENTRY TIME: 8A.M – 8P.M</p>
+									<p class="shop__paragraph">NUTRITION ADVICER: NO</p>
+								</div>
+								<a href="#" class="shop__btn btn">Buy now</a>
+							</div>
+						</li>
+						<li class="shop__item">
+							<div class="shop__content">
+								<div class="shop__price">
+									<strong class="shop__price-title">
+										<span class="shop__currency">$</span>
+										99
+										<span class="shop__month">/month</span>
+									</strong>
+								</div>
+								<div class="shop__text">
+									<p class="shop__paragraph">ENTRY DATE: MON – FRI</p>
+									<p class="shop__paragraph">ENTRY TIME: 8A.M – 8P.M</p>
+									<p class="shop__paragraph">NUTRITION ADVICER: NO</p>
+								</div>
+								<a href="#" class="shop__btn btn">Buy now</a>
+							</div>
+						</li>
+					</ul>
+					<div class="reviews hor-slider">
+						<div class="reviews__wrap">
+							<div class="reviews__item">
+								<div class="reviews__user-photo">
+									<div class="reviews__photo-block">
+										<img src="images/user-photo.jpg" alt="" class="reviews__photo">
+									</div>
+								</div>
+								<div class="reviews__content">
+									<div class="reviews__text">
+										<p class="reviews__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.</p>
+									</div>
+									<div class="reviews__user-info">
+										<span class="reviews__position">Trainer</span>
+										<strong class="reviews__user-name">Laura Shepard</strong>
+									</div>
+
+								</div>
+								<div class="reviews__trainer-block">
+									<div class="reviews__photo-block reviews__photo-block_train">
+										<img src="images/trainer-photo.jpg" alt="" class="reviews__photo">
+									</div>
+									<div class="reviews__trainer-holder">
+										<strong class="reviews__trainer-name">Sara Taylor</strong>
+										<span class="reviews__trainer-position">Trainer</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="reviews__wrap">
+							<div class="reviews__item">
+								<div class="reviews__user-photo">
+									<div class="reviews__photo-block">
+										<img src="images/user-photo.jpg" alt="" class="reviews__photo">
+									</div>
+								</div>
+								<div class="reviews__content">
+									<div class="reviews__text">
+										<p class="reviews__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.</p>
+									</div>
+									<div class="reviews__user-info">
+										<span class="reviews__position">Trainer</span>
+										<strong class="reviews__user-name">Laura Shepard</strong>
+									</div>
+
+								</div>
+								<div class="reviews__trainer-block">
+									<div class="reviews__photo-block reviews__photo-block_train">
+										<img src="images/trainer-photo.jpg" alt="" class="reviews__photo">
+									</div>
+									<div class="reviews__trainer-holder">
+										<strong class="reviews__trainer-name">Sara Taylor</strong>
+										<span class="reviews__trainer-position">Trainer</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="reviews__wrap">
+							<div class="reviews__item">
+								<div class="reviews__user-photo">
+									<div class="reviews__photo-block">
+										<img src="images/user-photo.jpg" alt="" class="reviews__photo">
+									</div>
+								</div>
+								<div class="reviews__content">
+									<div class="reviews__text">
+										<p class="reviews__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.</p>
+									</div>
+									<div class="reviews__user-info">
+										<span class="reviews__position">Trainer</span>
+										<strong class="reviews__user-name">Laura Shepard</strong>
+									</div>
+
+								</div>
+								<div class="reviews__trainer-block">
+									<div class="reviews__photo-block reviews__photo-block_train">
+										<img src="images/trainer-photo.jpg" alt="" class="reviews__photo">
+									</div>
+									<div class="reviews__trainer-holder">
+										<strong class="reviews__trainer-name">Sara Taylor</strong>
+										<span class="reviews__trainer-position">Trainer</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="reviews__wrap">
+							<div class="reviews__item">
+								<div class="reviews__user-photo">
+									<div class="reviews__photo-block">
+										<img src="images/user-photo.jpg" alt="" class="reviews__photo">
+									</div>
+								</div>
+								<div class="reviews__content">
+									<div class="reviews__text">
+										<p class="reviews__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.</p>
+									</div>
+									<div class="reviews__user-info">
+										<span class="reviews__position">Trainer</span>
+										<strong class="reviews__user-name">Laura Shepard</strong>
+									</div>
+
+								</div>
+								<div class="reviews__trainer-block">
+									<div class="reviews__photo-block reviews__photo-block_train">
+										<img src="images/trainer-photo.jpg" alt="" class="reviews__photo">
+									</div>
+									<div class="reviews__trainer-holder">
+										<strong class="reviews__trainer-name">Sara Taylor</strong>
+										<span class="reviews__trainer-position">Trainer</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
 				</div>
 			</div>
 		</div>

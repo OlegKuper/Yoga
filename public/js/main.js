@@ -3,11 +3,15 @@ function initPage(){
 	ImgTobg();
 	mobileMenu();
 	pageScrollTop();
+	validateFields();
+	slider();
+	hovered();
+	horSlider();
+	anchor();
+	header_fixed_class();
 	$(function() {
 		jcf.replaceAll();
 	});
-	validateFields();
-	slider();
 }
 
 function ImgTobg() {
@@ -52,7 +56,47 @@ function slider() {
 		infinite: true,
 	});
 }
+function horSlider() {
+	$('.hor-slider').slick({
+		infinite: true,
+		dots: true,
+		vertical: true,
+	});
+}
 
+function anchor(){
+	$(".anchor, .visual__btn-down").click(function(e){
+		var href = $(this).attr("href");
+		offsetTop = href === "#" ? 0 : $(href).offset().top - $('.header-page').outerHeight();
+		// for modal popup
+		$('body').removeClass('menu-opened');
+		$("html, body").stop().animate({
+			scrollTop: offsetTop
+		}, 800);
+		e.preventDefault();
+	});
+};
+
+function header_fixed_class(){
+	var header = $('.header-page');
+	var wrapper = $('.wrapper');
+	var heightEl  = 0;
+	$(window).scrollTop() > heightEl ? header.addClass('modify') : header.removeClass('modify');
+	$(window).scrollTop() > heightEl ? wrapper.addClass('header_fixed') : wrapper.removeClass('header_fixed');
+	$(window).scroll(function(event){
+		//event.stopImmediatePropagation();
+		$(window).scrollTop() > heightEl ? header.addClass('modify') : header.removeClass('modify');
+		$(window).scrollTop() > heightEl ? wrapper.addClass('header_fixed') : wrapper.removeClass('header_fixed');
+	});
+}
+
+function hovered() {
+	$('.shop__btn').mouseenter(function () {
+		$(this).parent().find('.shop__price-title').addClass('hovered');
+	}).mouseleave(function () {
+		$(this).parent().find('.shop__price-title').removeClass('hovered');
+	});
+}
 
 function validateFields(){
 	if( document.querySelector('.contact-form') ){
