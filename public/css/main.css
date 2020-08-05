@@ -996,44 +996,6 @@ body > .jcf-select-drop.jcf-drop-flipped {
     .slick-arrow.slick-next {
       right: -10px; } }
 
-/* buttons */
-.btn {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 1px solid transparent;
-  text-align: center;
-  font-family: "Open Sans", sans-serif;
-  border-radius: 10px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  padding: 15px 38px;
-  color: #fff;
-  background: #5363db;
-  width: 100%;
-  max-width: 170px; }
-  .btn.active:focus, .btn.active:hover, .btn:focus, .btn:active, .btn:hover {
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    outline: none; }
-
-.btn-default {
-  background: #fff;
-  border: 1px solid #888888;
-  color: #888888; }
-  .btn-default.active:focus, .btn-default.active:hover, .btn-default:focus, .btn-default:active, .btn-default:hover {
-    -webkit-box-shadow: 0 0 4px 1px rgba(255, 102, 0, 0.7);
-            box-shadow: 0 0 4px 1px rgba(255, 102, 0, 0.7); }
-
-/*end btn*/
 /* Slider */
 .slick-slider {
   position: relative;
@@ -1107,7 +1069,45 @@ body > .jcf-select-drop.jcf-drop-flipped {
 .slick-arrow.slick-hidden {
   display: none; }
 
-/* layout parts */
+/* components */
+/* buttons */
+.btn {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid transparent;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 15px 38px;
+  color: #fff;
+  background: #5363db;
+  width: 100%;
+  max-width: 170px; }
+  .btn.active:focus, .btn.active:hover, .btn:focus, .btn:active, .btn:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    outline: none; }
+
+.btn-default {
+  background: #fff;
+  border: 1px solid #888888;
+  color: #888888; }
+  .btn-default.active:focus, .btn-default.active:hover, .btn-default:focus, .btn-default:active, .btn-default:hover {
+    -webkit-box-shadow: 0 0 4px 1px rgba(255, 102, 0, 0.7);
+            box-shadow: 0 0 4px 1px rgba(255, 102, 0, 0.7); }
+
+/*end btn*/
 /* header */
 .header-page {
   position: absolute;
@@ -1528,7 +1528,7 @@ body > .jcf-select-drop.jcf-drop-flipped {
     color: #b7bffc;
     margin: 0; }
 
-/* components */
+/* layout parts */
 .visual {
   margin-top: 100px;
   position: relative;

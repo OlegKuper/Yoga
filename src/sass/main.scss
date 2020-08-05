@@ -5,12 +5,13 @@
 @import "helpers/_reset";
 @import "helpers/_jcf";
 @import "helpers/_helpers";
-@import "helpers/_buttons";
 @import "helpers/slick";
-/* layout parts */
-@import "layout/_header";
-@import "layout/_main_nav";
-@import "layout/_footer";
-
 /* components */
- @import "components/_yoga";
+@import "components/buttons";
+@import "components/header";
+@import "components/main_nav";
+@import "components/footer";
+/* layout parts */
+@import "layout/yoga";
+
+
