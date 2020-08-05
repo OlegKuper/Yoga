@@ -162,11 +162,6 @@
       flex-direction: column;
     }
   }
-  //&__holder{
-  //  display: block;
-  //  max-width: 270px;
-  //  width: 100%;
-  //}
   &__img-block{
     display: block;
     position: relative;
@@ -221,9 +216,6 @@
     @include media('<tablet') {
       width: 50%;
     }
-    //@include media('<450px') {
-    //  width: 100%;
-    //}
   }
   &__img-box{
     display: block;
@@ -243,13 +235,14 @@
       opacity: 0;
     }
     &:hover{
-      &:before{
-        opacity: 1;
+      @include media('>tablet') {
+        &:before{
+          opacity: 1;
+        }
+        .gallery__loupe{
+          opacity: 1;
+        }
       }
-      .gallery__loupe{
-        opacity: 1;
-      }
-
     }
   }
   &__loupe{
@@ -422,14 +415,13 @@
     }
   }
   &__item{
-    flex: 0 0 33.3333%;
+    width: 33.3333%;
     padding: 0 15px;
     @include media('<tablet') {
-      flex: 0 0 50%;
+      width: 50%;
       margin-bottom: 30px;
     }
     @include media('<phone') {
-      flex: initial;
       max-width: 400px;
       width: 100%;
       padding: 0;
@@ -723,6 +715,7 @@
     width: 30px;
     height: 30px;
     background-size: 100% auto;
+    transition: .3s ease-in-out;
   }
   .slick-arrow.slick-prev{
     left: 26%;
@@ -757,10 +750,12 @@
   .slick-dots{
     position: absolute;
     top: 67px;
-    //transform: translateY(-50%);
     right: -55px;
     @include media('<1325px') {
       right: 20px;
+    }
+    @include media('<phone') {
+      top: 52px;
     }
   }
   .slick-dots li{

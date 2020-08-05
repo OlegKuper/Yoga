@@ -126,6 +126,10 @@
     line-height: 22px;
     color:$white;
     font-weight: 400;
+    pointer-events: none;
+    @include media('<tablet') {
+      pointer-events: auto;
+    }
   }
   &__mail{
     display: block;
